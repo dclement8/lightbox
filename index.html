@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"   href="css/main.css">
+    <title>Lightbox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+</head>
+<body>
+
+
+<div class="gallery-container" id="My-lightbox-gallery">
+
+    <div class="vignette" >
+        <img data-img="gallery/large/landscape-1112911_1280.jpg"
+        src="gallery/small/landscape-1112911_640.jpg">
+        <div>Mystrious Lanscape</div>
+
+    </div>
+
+    <div class="vignette" >
+        <img data-img="gallery/large/rocky-mountain-1149298_1280.jpg"
+             src="gallery/small/rocky-mountain-1149298_640.jpg">
+        <div>Rocky Mountain !</div>
+    </div>
+
+    <div class="vignette" >
+        <img data-img="gallery/large/seacoast-1507243_1280.jpg"
+             src="gallery/small/seacoast-1507243_640.jpg">
+        <div>Summer Sea Coast</div>
+    </div>
+
+    <div class="vignette" >
+        <img data-img="gallery/large/snow-1216542_1920.jpg"
+             src="gallery/small/snow-1216542_640.jpg">
+        <div>Snowy Winter Mountain</div>
+    </div>
+
+    <div class="vignette" >
+        <img data-img="gallery/large/wave-1246560_1920.jpg"
+             src="gallery/small/wave-1246560_640.jpg">
+        <div>The Big Large Wave !</div>
+    </div>
+
+</div>
+
+<!-- section : fenêtre modale   -->
+<div id="modal">
+    <div id="modal_content" class="large">
+        <div id="lightbox_image" class="large">
+            <img src="" id="modal_img">
+            <button id="modal_prec"><</button>
+            <button id="modal_suiv">></button>
+            <button id="modal_large">▢</button>
+            <button id="modal_close">X</button>
+            <div id="modal_txt"></div>
+            <div id="comment_btn">&#9776; Comment</div>
+        </div>
+        <div id="comment" class="large">
+            <h3>Add a comment</h3>
+            <p><input type="text" id="comment_name" placeholder="Name" required/></p>
+            <p><textarea id="comment_value" cols="20" rows="3" required/></textarea></p>
+            <p>
+                <input type="button" id="comment_submit" value="Send" />
+                <input type="button" id="comment_reset" value="Reset" />
+            </p>
+            <hr />
+            <h3>Comments</h3>
+            <div id="comment_show"></div>
+        </div>
+    </div>
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+<script src="lib/lightbox.js"></script>
+</body>
+</html>
